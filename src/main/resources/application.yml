@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: delivery
+
+tips:
+  platform:
+    fee: 10
+    bonus:
+      courier: 15
