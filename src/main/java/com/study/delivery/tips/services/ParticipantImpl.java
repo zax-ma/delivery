@@ -1,8 +1,8 @@
-package com.study.delivery.services;
+package com.study.delivery.tips.services;
 
-import com.study.delivery.AllDao;
-import com.study.delivery.models.Delivery;
-import com.study.delivery.models.Participant;
+import com.study.delivery.tips.AllDao;
+import com.study.delivery.tips.models.Delivery;
+import com.study.delivery.tips.models.Participant;
 import lombok.Getter;
 import org.springframework.stereotype.Service;
 

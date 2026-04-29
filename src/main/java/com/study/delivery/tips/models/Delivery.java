@@ -1,4 +1,4 @@
-package com.study.delivery.models;
+package com.study.delivery.tips.models;
 
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;

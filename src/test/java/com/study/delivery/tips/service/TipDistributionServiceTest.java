@@ -1,11 +1,11 @@
-package com.study.delivery.service;
+package com.study.delivery.tips.service;
 
-import com.study.delivery.constants.ApplicationConstants;
-import com.study.delivery.models.Delivery;
-import com.study.delivery.models.Participant;
-import com.study.delivery.services.DistributionResult;
-import com.study.delivery.services.ParticipantImpl;
-import com.study.delivery.services.TipDistributionServiceImpl;
+import com.study.delivery.tips.constants.ApplicationConstants;
+import com.study.delivery.tips.models.Delivery;
+import com.study.delivery.tips.models.Participant;
+import com.study.delivery.tips.services.DistributionResult;
+import com.study.delivery.tips.services.ParticipantImpl;
+import com.study.delivery.tips.services.TipDistributionServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;

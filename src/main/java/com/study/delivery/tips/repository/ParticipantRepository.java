@@ -1,4 +1,4 @@
-package com.study.delivery.repository;
+package com.study.delivery.tips.repository;
 
 public interface ParticipantRepository {
 }

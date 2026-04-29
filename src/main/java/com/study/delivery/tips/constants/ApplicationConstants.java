@@ -1,4 +1,4 @@
-package com.study.delivery.constants;
+package com.study.delivery.tips.constants;
 
 public final class ApplicationConstants {
     public static final long PLATFORM = 42;

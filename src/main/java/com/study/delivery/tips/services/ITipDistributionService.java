@@ -1,6 +1,6 @@
-package com.study.delivery.services;
+package com.study.delivery.tips.services;
 
-import com.study.delivery.models.Delivery;
+import com.study.delivery.tips.models.Delivery;
 
 public interface ITipDistributionService {
     /**

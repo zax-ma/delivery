@@ -1,7 +1,7 @@
-package com.study.delivery;
+package com.study.delivery.tips;
 
-import com.study.delivery.models.Delivery;
-import com.study.delivery.models.Participant;
+import com.study.delivery.tips.models.Delivery;
+import com.study.delivery.tips.models.Participant;
 import lombok.Getter;
 import org.springframework.stereotype.Component;
 

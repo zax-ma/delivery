@@ -1,15 +1,15 @@
-package com.study.delivery.services;
+package com.study.delivery.tips.services;
 
-import com.study.delivery.models.Delivery;
-import com.study.delivery.models.Participant;
+import com.study.delivery.tips.models.Delivery;
+import com.study.delivery.tips.models.Participant;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.study.delivery.constants.ApplicationConstants.DEFAULT_FEE;
-import static com.study.delivery.constants.ApplicationConstants.PLATFORM;
+import static com.study.delivery.tips.constants.ApplicationConstants.DEFAULT_FEE;
+import static com.study.delivery.tips.constants.ApplicationConstants.PLATFORM;
 
 /**
  * Сервис распределения чаевых.

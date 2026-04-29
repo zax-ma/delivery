@@ -1,4 +1,4 @@
-package com.study.delivery.dto;
+package com.study.delivery.tips.dto;
 
 public record ParticipantDto(String name,
         String type,

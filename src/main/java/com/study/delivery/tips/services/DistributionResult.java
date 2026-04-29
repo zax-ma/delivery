@@ -1,7 +1,6 @@
-package com.study.delivery.services;
+package com.study.delivery.tips.services;
 
 import lombok.Data;
-import lombok.Getter;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
