@@ -1,6 +1,5 @@
 package com.study.delivery.shop.strategy;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -9,7 +8,6 @@ import java.util.Map;
 public class DiscountFactory {
     private final Map<String, IDiscountStrategy> strategies;
 
-    @Autowired
     public DiscountFactory(Map<String, IDiscountStrategy> strategies) {
         this.strategies = strategies;
     }

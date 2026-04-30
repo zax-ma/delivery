@@ -11,18 +11,19 @@ public class FixedAmountDiscount implements IDiscountStrategy{
 
     @Override
     public List<UserGoods> applyDiscount(List<UserGoods> userGoods, double discount) {
-        List<UserGoods> goodsResult = new ArrayList<>();
-        double totalAmount = 0.0;
-        for (UserGoods goods : userGoods){
-            totalAmount += goods.getPrice();
-        }
-        for (UserGoods goods : userGoods) {
-            double oldPrice = goods.getPrice();
-            double newPrice = fixedDiscountCounter(totalAmount, oldPrice, discount);
-            double totalPriceResult = oldPrice - newPrice;
-            goodsResult.add(new UserGoods(goods.getId(), goods.getPrice(), totalPriceResult));
-        }
-        return goodsResult;
+        double totalSum = userGoods.stream()
+                .mapToDouble(UserGoods::getPrice)
+                .filter(price -> price > 0)
+                .sum();
+
+        return userGoods.stream()
+                .map(p -> {
+                    double newPrice = (totalSum > 0 && p.getPrice() > 0)
+                            ? fixedDiscountCounter(totalSum, p.getPrice(), discount)
+                            : 0;
+                    double totalPrice = p.getPrice() - newPrice;
+                    return new UserGoods(p.getId(), p.getPrice(), totalPrice);
+                }).toList();
     }
 
     private double fixedDiscountCounter(double amount, double price, double discount){
